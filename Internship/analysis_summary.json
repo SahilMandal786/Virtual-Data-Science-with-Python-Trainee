@@ -1,0 +1,460 @@
+{
+  "raw_rows": 137700,
+  "raw_columns": 16,
+  "clean_columns": 25,
+  "source_file_mb": 23.74,
+  "data_as_of": "2023-09-27",
+  "start_min": "2020-01-01",
+  "end_max": "2023-09-23",
+  "groups": {
+    "By Month": 123930,
+    "By Year": 11016,
+    "By Total": 2754
+  },
+  "states": 54,
+  "sexes": 3,
+  "age_groups": 17,
+  "exact_duplicates": 0,
+  "key_duplicates": 0,
+  "footnoted_rows": 97896,
+  "fully_observed_rows": 39804,
+  "numeric_missing": {
+    "covid_deaths": 39430,
+    "total_deaths": 19509,
+    "pneumonia_deaths": 44864,
+    "pneumonia_covid_deaths": 36884,
+    "influenza_deaths": 26688,
+    "pic_deaths": 44233
+  },
+  "numeric_missing_pct": {
+    "covid_deaths": 28.63,
+    "total_deaths": 14.17,
+    "pneumonia_deaths": 32.58,
+    "pneumonia_covid_deaths": 26.79,
+    "influenza_deaths": 19.38,
+    "pic_deaths": 32.12
+  },
+  "negative_counts": 0,
+  "covid_gt_total": 0,
+  "pneumonia_gt_total": 0,
+  "influenza_gt_total": 0,
+  "overlap_gt_covid": 0,
+  "union_lt_components": 0,
+  "invalid_dates": 0,
+  "partial_period_rows": 5508,
+  "state_iqr_q1": 5763.75,
+  "state_iqr_q3": 27740.5,
+  "state_iqr_cutoff": 60705.625,
+  "state_iqr_flag_count": 3,
+  "state_iqr_flag_names": [
+    "California",
+    "Florida",
+    "Texas"
+  ],
+  "eda": {
+    "national_cumulative_covid": 1146774,
+    "national_total_deaths": 12303399,
+    "national_covid_share": 9.32,
+    "peak_month": "January 2021",
+    "peak_month_covid": 105565,
+    "peak_month_share": 28.25,
+    "lowest_complete_month": "January 2020",
+    "lowest_complete_month_covid": 6,
+    "aug_2023_covid": 3844,
+    "age_65plus_deaths": 868831,
+    "age_65plus_share": 75.76,
+    "age_max_count_group": "85 years and over",
+    "age_max_count": 311863,
+    "age_highest_pct_group": "65-74 years",
+    "age_highest_pct": 10.24,
+    "male_total_selected_bins": 629728,
+    "female_total_selected_bins": 517046,
+    "male_female_ratio_selected_bins": 1.218,
+    "max_sex_ratio_group": "45-54 years",
+    "max_sex_ratio": 1.75,
+    "highest_state_share_name": "New Jersey",
+    "highest_state_share": 11.4,
+    "lowest_state_share_name": "Vermont",
+    "lowest_state_share": 4.1,
+    "state_share_median": 8.95,
+    "covid_pneumonia_spearman": 0.919,
+    "covid_total_spearman": 0.845
+  },
+  "clustering": {
+    "n_jurisdictions": 52,
+    "features": [
+      "covid_pct_all_deaths",
+      "pneumonia_pct_all_deaths",
+      "covid_with_pneumonia_pct",
+      "influenza_pct_all_deaths",
+      "age_65plus_covid_pct",
+      "male_covid_pct",
+      "covid_2021_pct_2020_22"
+    ],
+    "best_k": 4,
+    "best_silhouette": 0.222,
+    "pca_variance_2d": 62.19,
+    "cluster_sizes": {
+      "0": 8,
+      "1": 13,
+      "2": 23,
+      "3": 8
+    },
+    "cluster_members": {
+      "0": [
+        "Alaska",
+        "Colorado",
+        "Hawaii",
+        "Idaho",
+        "Montana",
+        "Oregon",
+        "Utah",
+        "Washington"
+      ],
+      "1": [
+        "Connecticut",
+        "Iowa",
+        "Kansas",
+        "Maine",
+        "Massachusetts",
+        "Minnesota",
+        "Nebraska",
+        "New Hampshire",
+        "North Dakota",
+        "Rhode Island",
+        "South Dakota",
+        "Vermont",
+        "Wisconsin"
+      ],
+      "2": [
+        "Alabama",
+        "Arkansas",
+        "Delaware",
+        "Georgia",
+        "Illinois",
+        "Indiana",
+        "Kentucky",
+        "Louisiana",
+        "Maryland",
+        "Michigan",
+        "Mississippi",
+        "Missouri",
+        "New Jersey",
+        "New York",
+        "North Carolina",
+        "Ohio",
+        "Oklahoma",
+        "Pennsylvania",
+        "South Carolina",
+        "Tennessee",
+        "Virginia",
+        "West Virginia",
+        "Wyoming"
+      ],
+      "3": [
+        "Arizona",
+        "California",
+        "District of Columbia",
+        "Florida",
+        "Nevada",
+        "New Mexico",
+        "Puerto Rico",
+        "Texas"
+      ]
+    },
+    "cluster_means": {
+      "0": {
+        "covid_pct_all_deaths": 7.125,
+        "pneumonia_pct_all_deaths": 7.68,
+        "covid_with_pneumonia_pct": 50.409,
+        "influenza_pct_all_deaths": 0.215,
+        "age_65plus_covid_pct": 74.662,
+        "male_covid_pct": 57.669,
+        "covid_2021_pct_2020_22": 47.838
+      },
+      "1": {
+        "covid_pct_all_deaths": 8.13,
+        "pneumonia_pct_all_deaths": 8.04,
+        "covid_with_pneumonia_pct": 39.041,
+        "influenza_pct_all_deaths": 0.233,
+        "age_65plus_covid_pct": 82.672,
+        "male_covid_pct": 53.565,
+        "covid_2021_pct_2020_22": 35.012
+      },
+      "2": {
+        "covid_pct_all_deaths": 9.265,
+        "pneumonia_pct_all_deaths": 9.26,
+        "covid_with_pneumonia_pct": 47.463,
+        "influenza_pct_all_deaths": 0.175,
+        "age_65plus_covid_pct": 76.435,
+        "male_covid_pct": 53.279,
+        "covid_2021_pct_2020_22": 42.591
+      },
+      "3": {
+        "covid_pct_all_deaths": 9.355,
+        "pneumonia_pct_all_deaths": 11.534,
+        "covid_with_pneumonia_pct": 63.144,
+        "influenza_pct_all_deaths": 0.165,
+        "age_65plus_covid_pct": 70.803,
+        "male_covid_pct": 57.434,
+        "covid_2021_pct_2020_22": 43.162
+      }
+    },
+    "metrics": [
+      {
+        "k": 2,
+        "inertia": 274.638,
+        "silhouette": 0.196
+      },
+      {
+        "k": 3,
+        "inertia": 231.846,
+        "silhouette": 0.198
+      },
+      {
+        "k": 4,
+        "inertia": 197.128,
+        "silhouette": 0.222
+      },
+      {
+        "k": 5,
+        "inertia": 170.402,
+        "silhouette": 0.206
+      },
+      {
+        "k": 6,
+        "inertia": 145.611,
+        "silhouette": 0.218
+      },
+      {
+        "k": 7,
+        "inertia": 128.902,
+        "silhouette": 0.22
+      },
+      {
+        "k": 8,
+        "inertia": 115.904,
+        "silhouette": 0.201
+      }
+    ]
+  },
+  "supervised": {
+    "model_rows": 2069,
+    "train_rows": 1690,
+    "test_rows": 379,
+    "train_period": "Apr 2020 to Dec 2022",
+    "test_period": "Jan 2023 to Aug 2023",
+    "model_metrics": {
+      "MAE": 69.259,
+      "RMSE": 116.878,
+      "R2": 0.49,
+      "WAPE_pct": 54.239
+    },
+    "baseline_metrics": {
+      "MAE": 48.892,
+      "RMSE": 84.661,
+      "R2": 0.732,
+      "WAPE_pct": 38.289
+    },
+    "mae_improvement_pct": -41.66,
+    "worst_cases": [
+      {
+        "state": "California",
+        "month": "Jan 2023",
+        "actual": 1327.0,
+        "pred": 2550.8,
+        "abs_error": 1223.8
+      },
+      {
+        "state": "California",
+        "month": "Apr 2023",
+        "actual": 490.0,
+        "pred": 999.9,
+        "abs_error": 509.9
+      },
+      {
+        "state": "Arizona",
+        "month": "Jan 2023",
+        "actual": 246.0,
+        "pred": 674.3,
+        "abs_error": 428.3
+      },
+      {
+        "state": "California",
+        "month": "Jul 2023",
+        "actual": 273.0,
+        "pred": 608.1,
+        "abs_error": 335.1
+      },
+      {
+        "state": "Florida",
+        "month": "May 2023",
+        "actual": 294.0,
+        "pred": 619.9,
+        "abs_error": 325.9
+      },
+      {
+        "state": "California",
+        "month": "May 2023",
+        "actual": 372.0,
+        "pred": 688.4,
+        "abs_error": 316.4
+      },
+      {
+        "state": "Texas",
+        "month": "Jan 2023",
+        "actual": 1109.0,
+        "pred": 1420.1,
+        "abs_error": 311.1
+      },
+      {
+        "state": "Florida",
+        "month": "Jan 2023",
+        "actual": 991.0,
+        "pred": 1297.3,
+        "abs_error": 306.3
+      },
+      {
+        "state": "Texas",
+        "month": "May 2023",
+        "actual": 225.0,
+        "pred": 531.1,
+        "abs_error": 306.1
+      },
+      {
+        "state": "Texas",
+        "month": "Jun 2023",
+        "actual": 144.0,
+        "pred": 400.7,
+        "abs_error": 256.7
+      }
+    ],
+    "cv": [
+      {
+        "fold": "2021 H2",
+        "train_rows": 760.0,
+        "validation_rows": 310.0,
+        "model_MAE": 359.55,
+        "model_RMSE": 868.964,
+        "model_R2": 0.484,
+        "model_WAPE_pct": 45.881,
+        "baseline_MAE": 395.694,
+        "baseline_RMSE": 898.551,
+        "baseline_R2": 0.449,
+        "baseline_WAPE_pct": 50.494
+      },
+      {
+        "fold": "2022 H1",
+        "train_rows": 1070.0,
+        "validation_rows": 311.0,
+        "model_MAE": 192.253,
+        "model_RMSE": 410.478,
+        "model_R2": 0.818,
+        "model_WAPE_pct": 35.052,
+        "baseline_MAE": 386.325,
+        "baseline_RMSE": 769.965,
+        "baseline_R2": 0.358,
+        "baseline_WAPE_pct": 70.436
+      },
+      {
+        "fold": "2022 H2",
+        "train_rows": 1381.0,
+        "validation_rows": 309.0,
+        "model_MAE": 118.633,
+        "model_RMSE": 193.626,
+        "model_R2": 0.412,
+        "model_WAPE_pct": 50.856,
+        "baseline_MAE": 58.696,
+        "baseline_RMSE": 112.936,
+        "baseline_R2": 0.8,
+        "baseline_WAPE_pct": 25.162
+      }
+    ],
+    "n_features_after_encoding": 61
+  },
+  "deep_learning": {
+    "framework": "TensorFlow 2.20.0",
+    "fit_rows": 1381,
+    "validation_rows": 309,
+    "test_rows": 379,
+    "input_features": 61,
+    "parameters": 2529,
+    "best_epoch": 4,
+    "stop_epoch": 24,
+    "best_validation_loss": 0.07925,
+    "unregularized_best_epoch": 1,
+    "unregularized_final_train_loss": 0.01497,
+    "unregularized_final_validation_loss": 0.49378,
+    "unregularized_final_gap": 0.47881,
+    "model_metrics": {
+      "MAE": 34.253,
+      "RMSE": 59.621,
+      "R2": 0.867,
+      "WAPE_pct": 26.825
+    },
+    "baseline_metrics": {
+      "MAE": 48.892,
+      "RMSE": 84.661,
+      "R2": 0.732,
+      "WAPE_pct": 38.289
+    },
+    "worst_cases": [
+      {
+        "state": "Texas",
+        "month": "Feb 2023",
+        "actual": 632.0,
+        "pred": 965.2,
+        "abs_error": 333.2
+      },
+      {
+        "state": "Florida",
+        "month": "Jan 2023",
+        "actual": 991.0,
+        "pred": 685.2,
+        "abs_error": 305.8
+      },
+      {
+        "state": "North Carolina",
+        "month": "Jan 2023",
+        "actual": 675.0,
+        "pred": 372.7,
+        "abs_error": 302.3
+      },
+      {
+        "state": "Texas",
+        "month": "Jan 2023",
+        "actual": 1109.0,
+        "pred": 835.6,
+        "abs_error": 273.4
+      },
+      {
+        "state": "California",
+        "month": "Feb 2023",
+        "actual": 754.0,
+        "pred": 1026.5,
+        "abs_error": 272.5
+      },
+      {
+        "state": "Arizona",
+        "month": "Jan 2023",
+        "actual": 246.0,
+        "pred": 487.2,
+        "abs_error": 241.2
+      },
+      {
+        "state": "California",
+        "month": "Jan 2023",
+        "actual": 1327.0,
+        "pred": 1532.8,
+        "abs_error": 205.8
+      },
+      {
+        "state": "North Carolina",
+        "month": "Feb 2023",
+        "actual": 347.0,
+        "pred": 548.9,
+        "abs_error": 201.9
+      }
+    ]
+  }
+}
